@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko ambatukam</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>Tempat jual beli musang</h1>
+    </header>
+
+    <section class="produk-container">
+        <div class="produk">
+            <img src="king.jpg" alt="Produk 1">
+            <h2>orang ganteng</h2>
+            <p>Rp 1.000</p>
+            <button onclick="tambahKeKeranjang('Produk 1', 100000)">Beli</button>
+        </div>
+        <div class="produk">
+            <img src="qp.jpg" alt="Produk 2">
+            <h2>Produk 2</h2>
+            <p>Rp 150.000</p>
+            <button onclick="tambahKeKeranjang('Produk 2', 150000)">Beli</button>
+        </div>
+    </section>
+
+    <section class="keranjang">
+        <h2>Keranjang Belanja</h2>
+        <ul id="daftar-keranjang"></ul>
+        <p>Total: <span id="total">Rp 0</span></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
